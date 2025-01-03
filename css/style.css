@@ -1,0 +1,310 @@
+/*----------------------------edicion general-------------------------*/
+
+*{  /*aplica a todos los elemntos de la web*/
+    box-sizing: border-box; /*para que los elementos no crezcan al darl espacios internos a los elemntos*/
+    
+}
+
+body
+{
+    font-family: "Roboto"; /*agregar la tipografia*/
+    font-size: 16px; /**para normalizar los rem  rem = 10px para adaptarlos a diferentes panatllas**/
+    background-image: linear-gradient(to top, var(--gris_claro) 0%, var(--blanco)); /*degradado de fondo*/
+}
+
+a{ 
+    display: inline-block; 
+    text-decoration: none;
+    
+}
+
+
+.cuadrado-perfecto{
+
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.cuadrado-perfecto img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0 ;
+    left: 0;
+}
+
+:root{   /**Variables de css, se usan con var()**/
+    /**Paleta de colores**/
+--blanco: #FFFFFF;
+--oscuro: #212121;
+--primario: #FFC107;
+--secundario: #0097A7;
+--gris: #757575;
+--gris_claro: #DFE9F3;
+--valorate: #143F5D;
+    /**/
+}
+
+/******************************************************************************************************************/
+html{
+font-size: 62.5%;
+box-sizing: border-box;   /*Snipet para respetar el tamaño de los elementos*/
+
+}
+
+
+.flex{
+display: flex;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/* HEADER INICIO*/
+
+
+.hero {  /*para dar fondo al header de la pagina*/
+    background-image: url(../img/final.png);
+    background-repeat: no-repeat;  /*para que la imagen no se repita*/
+    background-size: 100%;  /* para que la imagen tome todo el ancho de la pagina*/
+    height: 18rem;
+    position: relative;
+    margin-bottom: 1;
+    overflow: hidden; /* Evita el desbordamiento */
+    
+    @media (min-width: 300px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 13.4rem;
+
+        .clickable-area {
+            top: 75%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
+
+
+    @media (min-width: 390px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 18rem;
+
+        .clickable-area {
+            top: 78%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
+
+    @media (min-width: 400px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 18rem;
+
+        .clickable-area {
+            top: 78%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
+
+    @media (min-width: 500px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 23rem;
+
+        .clickable-area {
+            top: 78%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
+
+    @media (min-width: 600px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 27rem;
+
+        .clickable-area {
+            top: 78%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
+
+    @media (min-width: 720px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 33.5rem;
+
+        .clickable-area {
+            top: 78%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
+
+    @media (min-width: 820px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 42rem;
+
+        .clickable-area {
+            top: 69%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
+
+
+    @media (min-width: 950px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 42rem;
+
+        .clickable-area {
+            top: 80%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
+
+    @media (min-width: 1014px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 60.5rem;
+
+        .clickable-area {
+            top: 59.5%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 10%;
+        }
+    }
+
+    @media (min-width: 1250px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 60.5rem;
+
+        .clickable-area {
+            top: 74%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 10%;
+        }
+    }
+
+    @media (min-width: 1366px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 60.5rem;
+
+        .clickable-area {
+            top: 80%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 10%;
+        }
+    }
+
+    @media (min-width: 1450px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 71rem;
+
+        .clickable-area {
+            top: 80%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 10%;
+        }
+    }
+
+
+    
+}
+
+/* Estilos del área clickeable */
+.clickable-area {
+    position: absolute;
+    top: 480px; /* Ajusta según la ubicación deseada */
+    left: 550px; /* Ajusta según la ubicación deseada */
+    width: 380px; /* Ancho del área clickeable */
+    height: 59px; /* Alto del área clickeable */
+    text-indent: -9999px; /* Oculta el texto si no necesitas mostrar nada */
+}
+
+/* HEADER FIN*/
+
+
+.row{
+
+    display: flex;
+    flex-wrap: wrap; /*si una de las columnas no entra en el espacio, esta columna ira hacia abajo*/
+    margin-left: -15px;
+    
+}
+
+
+.columna-33{  /*Tamaño de las columnas*/
+    width: 33.3%;
+}
+
+
+/* seccion de la galeria */
+.columna-50{
+
+    width: 50%;
+}
+
+.columna-25{
+
+    width: 25%;
+
+}
+
+
+
+/* Diseño responsive */
+
+@media(max-width: 767px)
+
+{
+
+    body{
+
+        font-size: 10px;
+    }
+
+    .columna-mobile-100{ /* columna del 100% de la pantalla para los servicios*/
+
+        width: 100%;
+
+    }
+
+    .columna-mobile-50{ /*columnas de la mitad de la pantalla para la galeria*/ 
+
+        width: 50%;
+
+    }
+
+}
+
+
